@@ -1,0 +1,37 @@
+apiVersion
+kind
+metadata
+  name
+  labels
+    app
+spec
+  replicas
+  selector
+    matchLabels
+      app
+  template
+    metadata
+      labels
+        app
+    spec
+      containers
+        - name
+          image
+          ports
+            - containerPort
+          env
+            - name
+              value
+            - name
+              valueFrom
+                secretKeyRef
+                  name
+                  key
+          resources
+            requests
+              memory
+              cpu
+            limits
+              memory
+              cpu
+      restartPolicy
